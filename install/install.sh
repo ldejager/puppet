@@ -1,6 +1,10 @@
 #!/bin/bash
 #
-# Puppet master installation steps based on history
+# Puppet master installation steps which installs:
+#
+# * Puppet Master (Apache passenger module)
+# * Puppet Dashboard (Apache passenger module)
+# * Puppet Librarian
 
 # Create SWAP file
 dd if=/dev/zero of=/swap bs=1M count=1024
