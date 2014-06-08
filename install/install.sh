@@ -17,6 +17,8 @@ puppet master --verbose --no-daemonize
 # Install librarian
 gem install librarian-puppet
 touch /etc/puppet/Modulefile
+
+# Initialize skeleton Puppetfile - Dont need to do as you're creating the Puppetfile in the next step
 librarian-puppet init
 
 # Configure librarian
@@ -240,4 +242,7 @@ chkconfig puppet-dashboard off
 chkconfig httpd on
 chkconfig mysqld on
 chkconfig puppet-dashboard-workers on
+
+# Cleanup by removing compilers from system
+yum remove gcc-c++ make automake
 
