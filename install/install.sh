@@ -231,10 +231,12 @@ htpasswd -c /etc/httpd/users user1
 touch /usr/share/puppet-dashboard/log/production.log
 chmod 0666 /usr/share/puppet-dashboard/log/production.log
 
-# Disable puppetmaster and dashboard services as they are now served through apache and enable requires services
+# Disable puppetmaster and dashboard services as they are now served through apache
 chkconfig puppetmaster off
 chkconfig puppetmaster off
 chkconfig puppet-dashboard off
+
+# Enable required services
 chkconfig httpd on
 chkconfig mysqld on
 chkconfig puppet-dashboard-workers on
