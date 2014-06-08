@@ -204,7 +204,7 @@ PassengerStatThrottleRate 120
            Order allow,deny
            Allow from localhost
            Allow from 127.0.0.1
-	       Allow from 1.1.1.1
+           Allow from 1.1.1.1
            Satisfy any
        </Limit>
    </Location>
@@ -214,7 +214,7 @@ PassengerStatThrottleRate 120
            Order allow,deny
            Allow from localhost
            Allow from 127.0.0.1
-	       Allow from 1.1.1.1
+           Allow from 1.1.1.1
            Satisfy any
        </Limit>
    </Location>
